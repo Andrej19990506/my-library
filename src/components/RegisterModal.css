@@ -1,0 +1,134 @@
+/* Общий стиль для затемненного фона */
+.author-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* Размещаем выше других элементов */
+}
+
+/* Стиль для модального окна для регистрации */
+.author-modal {
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    /* Размещаем выше затемненного фона */
+    background-color: #fff;
+    /* Белый фон */
+    padding: 30px 40px;
+    /* Внутренние отступы */
+    width: 90%;
+    /* Ширина */
+    max-width: 200px;
+    /* Максимальная ширина */
+    border-radius: 10px;
+    /* Скругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Тень */
+    text-align: center;
+    /* Центрирование текста */
+}
+
+/* Стили для полей ввода */
+.author-modal input[type="text"],
+.author-modal input[type="password"] {
+    width: 100%;
+    /* Ширина 100% */
+    padding: 10px;
+    /* Внутренние отступы */
+    margin: 10px 0;
+    /* Отступы сверху и снизу */
+    border: 1px solid #ddd;
+    /* Рамка */
+    border-radius: 5px;
+    /* Скругленные углы */
+    box-sizing: border-box;
+    /* Учет отступов и границ */
+    transition: border-color 0.3s;
+    /* Плавный переход цвета рамки */
+}
+
+.author-modal input[type="text"]:focus,
+.author-modal input[type="password"]:focus {
+    border-color: #4a90e2;
+    /* Цвет рамки при фокусировке */
+    outline: none;
+    /* Убираем рамку при фокусировке */
+}
+
+/* Заголовок модального окна */
+.author-modal h2 {
+    font-size: 24px;
+    /* Размер шрифта */
+    color: #4a90e2;
+    /* Цвет заголовка */
+    margin-bottom: 15px;
+    /* Отступ снизу */
+}
+
+/* Кнопка закрытия модального окна */
+.close-auth-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+    /* Плавный переход цвета */
+}
+
+.close-auth-modal:hover {
+    color: #333;
+    /* Цвет при наведении */
+}
+
+/* Кнопка регистрации */
+.login__btn {
+    background-color: #5cb85c;
+    /* Зеленый фон */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Плавный переход цвета */
+}
+
+.login__btn:hover {
+    background-color: #4cae4c;
+    /* Темнее при наведении */
+}
+
+/* Кнопка закрытия модального окна */
+.auth__regestr-btn {
+    margin-top: 10px;
+    /* Отступ сверху */
+    background-color: #5cb85c;
+    /* Красный фон */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Плавный переход цвета */
+}
+
+.auth__regestr-btn:hover {
+    background-color: #5cb85c;
+    /* Темнее при наведении */
+}

@@ -1,0 +1,26 @@
+.header__search {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__search-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    /* box-sizing: content-box; */
+    padding: 10px;
+    margin-right: 35px;
+    position: absolute;
+    opacity: 0;
+    width: 250px;
+    transition: opacity 0.2s linear, width 0.1s linear;
+}

@@ -1,0 +1,59 @@
+/* Общий стиль для заголовка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a90e2;
+    /* Цвет фона заголовка */
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.header__title {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Стили для навигации */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #e6e6e6;
+}
+
+
+
+
+
+/* Стиль для модального окна */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

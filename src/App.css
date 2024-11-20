@@ -1,0 +1,178 @@
+/* App.css */
+
+/* Общие стили для всего приложения */
+
+.App {
+    height: 100vh;
+    /* Задаем высоту 100% от высоты окна */
+    display: flex;
+    /* Используем Flexbox для размещения */
+    flex-direction: column;
+    /* Располагаем элементы вертикально */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Цвет фона */
+    color: #333;
+    /* Цвет текста */
+    height: 100vh;
+    /* Устанавливаем высоту, чтобы body занимало полное окно */
+    overflow: hidden;
+    /* Убираем прокрутку на body */
+}
+
+
+h1 {
+    text-align: center;
+    color: #000000;
+    /* Основной цвет заголовка */
+}
+
+/* Стили для хедера */
+header {
+    background: #4CAF50;
+    /* Цвет фона хедера */
+    color: white;
+    /* Цвет текста в хедере */
+    padding: 10px 0;
+    /* Отступы внутри хедера */
+}
+
+header h1 {
+    margin: 0;
+    /* Убираем отступы заголовка в хедере */
+}
+
+/* Стили для ссылки и кнопок */
+a {
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    color: white;
+    /* Цвет текста ссылки */
+    margin-right: 20px;
+    /* Отступы между ссылками */
+    font-size: 1.1em;
+    /* Размер шрифта для ссылки */
+}
+
+button {
+    background-color: #f4f4f4;
+    /* Цвет фона кнопки */
+    color: #333;
+    /* Цвет текста кнопки */
+    border: 1px solid #4CAF50;
+    /* Цвет рамки */
+    border-radius: 4px;
+    /* Закругленные углы кнопок */
+    padding: 10px 15px;
+    /* Отступы внутри кнопки */
+    cursor: pointer;
+    /* Курсор указывает на кликабельность */
+    font-size: 1em;
+    /* Размер шрифта кнопки */
+}
+
+button:hover {
+    background-color: #4CAF50;
+    /* Цвет фона кнопки при наведении */
+    color: white;
+    /* Цвет текста кнопки при наведении */
+}
+
+/* Стили для модальных окон */
+.author-modal-overlay {
+    position: fixed;
+    /* Фиксированное положение */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.author-modal {
+    background: white;
+    /* Цвет фона модального окна */
+    padding: 20px;
+    /* Отступы внутри модального окна */
+    border-radius: 5px;
+    /* Закругленные углы модального окна */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* Тень */
+    max-width: 400px;
+    /* Максимальная ширина модального окна */
+    width: 90%;
+    /* Ширина модального окна в процентах */
+}
+
+.close-auth-modal {
+    cursor: pointer;
+    /* Курсор указывает на кликабельность */
+    float: right;
+    /* Выравнивание к правому краю */
+    font-size: 24px;
+    /* Размер шрифта для кнопки закрытия */
+}
+
+/* Стили для формы в модальном окне */
+form {
+    display: flex;
+    flex-direction: column;
+    /* Выстраиваем элементы вертикально */
+}
+
+input {
+    /* Отступ между полями ввода */
+    padding: 10px;
+    /* Отступы внутри поля ввода */
+    border: 1px solid #ccc;
+    /* Цвет рамки поля ввода */
+    border-radius: 4px;
+    /* Закругленные углы поля ввода */
+}
+
+input:focus {
+    border-color: #4CAF50;
+    /* Цвет рамки поля ввод при фокусе */
+    outline: none;
+    /* Убираем стандартное обрамление браузера */
+}
+
+/* Стили для сообщения об ошибке */
+.error {
+    color: red;
+    /* Цвет текста ошибок */
+    font-size: 0.9em;
+    /* Размер шрифта для ошибок */
+    margin-bottom: 10px;
+    /* Отступ вниз от сообщения об ошибке */
+}
+
+
+
+
+/* App.css */
+
+/* Стили для списка книг */
+.book-container {
+    display: grid;
+    /* Используем Grid для расположения карточек */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* Колонки с минимальной шириной */
+    gap: 15px;
+    /* Промежутки между карточками */
+    justify-items: center;
+    /* Центрируем карточки по горизонтали */
+    padding: 20px;
+    /* Отступы для контейнера */
+}
+

@@ -1,0 +1,95 @@
+/* BookCard.css */
+.book-item {
+    background-size: cover;
+    /* Фон занимает всю карточку */
+    background-position: center;
+    /* Центрируем изображение */
+    border: 1px solid #e0e0e0;
+    /* Рамка */
+    border-radius: 10px;
+    /* Закругленные углы */
+    padding: 15px;
+    /* Отступы */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Легкая тень */
+    position: relative;
+    /* Для позиционирования содержимого */
+    height: 300px;
+    /* Высота карточки */
+    width: 200px;
+    /* Ширина карточки */
+    margin: 0;
+    /* Убираем отступы между карточками */
+    display: flex;
+    /* Для вертикального выравнивания текста */
+    flex-direction: column;
+    /* Вертикальное расположение текста */
+    justify-content: space-between;
+    /* Распределение пространства */
+    font-family: Arial, sans-serif;
+    /* Шрифт карточки */
+    overflow: hidden;
+    /* Скрываем содержимое, выходящее за пределы */
+    background-color: #f5f5f5;
+    /* Цвет фона по умолчанию (если изображение не загружается) */
+}
+
+.book-item-content {
+    position: absolute;
+    /* Для абсолютного позиционирования содержимого */
+    bottom: 15px;
+    /* Отступ снизу */
+    left: 15px;
+    /* Отступ слева */
+    color: white;
+    /* Цвет текста */
+    z-index: 1;
+    /* Помещаем текст поверх фона */
+}
+
+.book-image {
+    display: none;
+    /* Скрываем тег img, он больше не нужен */
+}
+
+/* Эффект при наведении */
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок книги */
+.book-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Подзаголовки: автор, год */
+.book-item p {
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0;
+}
+
+/* Рейтинг */
+.book-item .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.book-item .add-to-my-books {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-item .add-to-my-books:hover {
+    background-color: #357abd;
+}
